@@ -1,0 +1,10 @@
+{
+  "extends": ["@tsconfig/strictest", "@tsconfig/bun"],
+  "typeAcquisition": {
+    "enable": true
+  },
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "rootDir": "src"
+  }
+}

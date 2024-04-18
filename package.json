@@ -1,0 +1,28 @@
+{
+  "name": "arcgis-patches",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "index.ts",
+  "type": "module",
+  "bin": {
+    "arcgis-patches": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc --noEmit && bun build src/* --outdir=dist --sourcemap=external --target=node"
+  },
+  "devDependencies": {
+    "@tsconfig/bun": "^1.0.5",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.0.0",
+    "typescript-eslint": "^7.7.0"
+  }
+}
